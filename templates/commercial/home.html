@@ -1,0 +1,551 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>푸른재가방문요양센터</title>
+    <link rel="stylesheet" href="{% static 'css/bootstrap-grid.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/bootstrap-grid.css.map' %}" />
+    <link rel="stylesheet" href="{% static 'css/bootstrap-grid.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/bootstrap-grid.min.css.map' %}" />
+    <link rel="stylesheet" href="{% static 'css/bootstrap-reboot.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/bootstrap-reboot.css.map' %}" />
+    <link rel="stylesheet" href="{% static 'css/bootstrap-reboot.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/bootstrap-reboot.min.css.map' %}" />
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css.map' %}" />
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css.map' %}" />
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    <link rel="shortcut icon" href="{% static 'favicon/favicon.ico' %}">
+    <link rel="apple-touch-icon" sizes="57x57" href="{% static 'favicon/apple-icon-57x57.png' %}">
+    <link rel="apple-touch-icon" sizes="60x60" href="{% static 'favicon/apple-icon-60x60.png' %}">
+    <link rel="apple-touch-icon" sizes="72x72" href="{% static 'favicon/apple-icon-72x72.png' %}">
+    <link rel="apple-touch-icon" sizes="76x76" href="{% static 'favicon/apple-icon-76x76.png' %}">
+    <link rel="apple-touch-icon" sizes="114x114" href="{% static 'favicon/apple-icon-114x114.png' %}">
+    <link rel="apple-touch-icon" sizes="120x120" href="{% static 'favicon/apple-icon-120x120.png' %}">
+    <link rel="apple-touch-icon" sizes="144x144" href="{% static 'favicon/apple-icon-144x144.png' %}">
+    <link rel="apple-touch-icon" sizes="152x152" href="{% static 'favicon/apple-icon-152x152.png' %}">
+    <link rel="apple-touch-icon" sizes="180x180" href="{% static 'favicon/apple-icon-180x180.png' %}">
+    <link rel="icon" type="image/png" sizes="192x192"  href="{% static 'favicon/android-icon-192x192.png' %}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{% static 'favicon/favicon-32x32.png' %}">
+    <link rel="icon" type="image/png" sizes="96x96" href="{% static 'favicon/favicon-96x96.png' %}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{% static 'favicon/favicon-16x16.png' %}">
+    <link rel="manifest" href="{% static 'favicon/manifest.json' %}">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="{% static 'favicon/ms-icon-144x144.png' %}">
+    <meta name="theme-color" content="#ffffff">
+    <script src="https://kit.fontawesome.com/67d418f4de.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="d-none d-sm-block">
+        <div class="d-flex justify-content-center align-items-center" style="height: 60px;">
+            <div class="row fixed-width">
+                <div class="d-none d-md-block d-lg-block d-xl-block col-md-5 col-lg-5 col-xl-5 p-0 large-screen">
+                    <a href="" class="d-flex title">
+                        <h1>스마일시니어</h1>
+                        <h3>푸른재가방문요양센터</h3>
+                    </a>
+                </div>
+                <div class="d-block d-md-none col-12 col-sm-11 large-screen d-flex align-items-center justify-content-center">
+                    <a href="" class="d-flex title">
+                        <h1>스마일시니어</h1>
+                        <h3>푸른재가방문요양센터</h3>
+                    </a>
+                </div>
+                <nav class="d-none d-md-block d-lg-block d-xl-block col-md-7 col-lg-7 col-xl-7 large-screen p-0">
+                    <div class="mt-1 d-flex justify-content-end align-items-center">
+                        <ul class="d-flex pl-1">
+                            <li>
+                                <a href="">홈</a>
+                            </li>
+                            <li>
+                                <a href="#center-info">방문요양</a>
+                            </li>
+                            <li>
+                                <a href="#service-info">서비스 정보</a>
+                            </li>
+                            <li>
+                                <a href="#service-cost">등급별 월한도액</a>
+                            </li>
+                            <li>
+                                <a href="#counseling">상담 신청</a>
+                            </li>
+                            <li>
+                                <a href="#center-location">센터 정보</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <div class="d-none d-sm-block d-md-none col-1 col-sm-1 navbar">
+                    <button class="navbar-toggler m-2" id="nav-bar2" type="button" data-toggle="collapse" data-target="#navigator">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="collapse navbar-collapse" id="navigator">
+            <ul class="navbar-nav pl-5 pt-3 pb-3">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="">홈</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#center-info">방문요양</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#service-info">서비스 정보</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#service-cost">등급별 월한도액</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#counseling">상담신청</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#center-location">센터 정보</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <nav class="row">
+        <div class="d-block d-sm-none col-12 large-screen d-flex align-items-center justify-content-center" style="height: 60px;">
+            <a href="" class="d-flex title">
+                <h1>스마일시니어</h1>
+                <h3>푸른재가방문요양센터</h3>
+            </a>
+        </div>
+    </nav>
+    <main>
+        <div class="d-flex justify-content-center">
+            <container class="home row fixed-width">
+                <div class="d-block d-md-none col-md-12 mb-3">
+                    <div class="d-flex justify-content-center">
+                        <img src="{% static 'img/1.jpg' %}" alt="">
+                    </div>
+                </div>
+                <article class="d-none d-md-block col-md-6">
+                    <h3>
+                        어르신과 마음이 맞는 <br />
+                        요양보호사를 찾아드려요
+                    </h3>
+                    <span>
+                        스마일시니어 푸른재가방문요양센터는 <br />
+                        도움이 필요한 어르신들께 1년 365일 문이 열려있습니다. <br />
+                        궁금한 점이 생기시면 언제든 연락 주세요.
+                    </span> <br />
+                    <div style="margin-top: 2.188em; margin-left: 9em;">
+                        <a href="#counseling">상담 신청</a>
+                    </div>
+                </article>
+                <article class="d-block d-md-none col-md-12 d-flex justify-content-center">
+                    <div>
+                        <h3>
+                            어르신과 마음이 맞는 <br />
+                            요양보호사를 찾아드려요
+                        </h3>
+                        <span>
+                            스마일시니어 푸른재가방문요양센터는 <br />
+                            도움이 필요한 어르신들께 1년 365일 문이 열려있습니다. <br />
+                            궁금한 점이 생기시면 언제든 연락 주세요.
+                        </span> <br />
+                        <div class="d-flex justify-content-center" style="margin-top: 2.188em;">
+                            <a href="#counseling">상담 신청</a>
+                        </div>
+                    </div>
+                </article>
+                <div class="d-none d-md-block col-md-6">
+                    <div class="d-flex justify-content-end">
+                        <img src="{% static 'img/1.jpg' %}" alt="">
+                    </div>
+                </div>
+            </container>
+        </div>
+        <div id="center-info" class="center-info py-3" style="background-color: #F9F9F9;">
+            <div class="d-none d-md-block">
+                <section class="d-flex flex-column py-5">
+                    <div class="d-flex align-items-center justify-content-center">
+                        <div class="my-3" style="padding-right: 6em;">
+                            <h3>노인장기요양보험에 대해 알고 계시나요?</h3>
+                            <p>노인장기요양보험제도란 국가에서 지원하는 노인복지서비스로서,<br>
+                                몸이 불편하신 어르신들의 집으로 찾아가 방문요양, 방문목욕, <br>
+                                요양등급신청서비스, 복지용구를 제공 해 드리는 제도입니다.</p>
+                        </div>
+                        <div>
+                            <img src="{% static 'img/2.jpg' %}" alt="">
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-center">
+                        <div>
+                            <div>
+                                <img src="{% static 'img/3.jpg' %}" alt="">
+                            </div>
+                        </div>
+                        <div class="py-3" style="padding-left: 6em;">
+                            <h3>도움이 필요한 어르신들에게 힘이 되겠습니다.</h3>
+                            <p>노인장기요양등급 신청부터 요양보호사 연결, 관리 감독까지<br>
+                                저희 스마일시니어 푸른재가방문요양센터가 함께하겠습니다.</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="d-block d-md-none">
+                <section class="d-flex flex-column py-5">
+                    <div class="d-flex flex-column align-items-center">
+                        <div class="mb-1">
+                            <h3>노인장기요양보험에 대해 알고 계시나요?</h3>
+                            <p style="text-align: center;">노인장기요양보험제도란 국가에서 지원하는 노인복지서비스로서,<br>
+                                몸이 불편하신 어르신들의 집으로 찾아가 방문요양, 방문목욕, <br>
+                                요양등급신청서비스, 복지용구를 제공 해 드리는 제도입니다.</p>
+                        </div>
+                        <div>
+                            <img src="{% static 'img/2.jpg' %}" alt="">
+                        </div>
+                    </div>
+                    <div class="d-flex flex-column align-items-center">
+                        <div class="mt-3">
+                            <h3>도움이 필요한 어르신들에게 힘이 되겠습니다.</h3>
+                            <p style="text-align: center;">노인장기요양등급 신청부터 요양보호사 연결, 관리 감독까지<br>
+                                저희 스마일시니어 푸른재가방문요양센터가 함께하겠습니다.</p>
+                        </div>
+                        <div>
+                            <img src="{% static 'img/3.jpg' %}" alt="">
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <div id="service-info" class="service-info py-5 bg-white">
+            <section class="mt-3">
+                <div class="d-flex justify-content-center align-items-center mb-2">
+                    <div class="bar"></div>
+                    <h2 class="mx-3">방문요양 서비스</h2>
+                    <div class="bar"></div>
+                </div>
+                <article class="d-none d-md-block">
+                    <p style="text-align: center;">
+                        "방문요양서비스"란 노인장기요양등급을 받으신 어르신 댁에 국가공인 요양보호사가 방문하여<br>
+                        일정 시간 동안 다양한 종류의 케어를 제공하는 서비스입니다
+                    </p>
+                </article>
+                <article class="d-block d-md-none">
+                    <p style="text-align: center;">
+                        "방문요양서비스"란 노인장기요양등급을 받으신 어르신 댁에<br>
+                        국가공인 요양보호사가 방문하여 일정 시간 동안<br>
+                        다양한 종류의 케어를 제공하는 서비스입니다
+                    </p>
+                </article>
+            </section>
+            <section class="d-flex justify-content-center align-items-center my-4">
+                <div class="d-none d-md-block mr-5">
+                    <img src="{% static 'img/4.jpg' %}" alt="">
+                </div>
+                <div>
+                    <ul style="padding: 0;">
+                        <li class="d-flex align-items-center">
+                            <div class="service-icon d-flex justify-content-center align-items-center"><i class="fas fa-utensils"></i></div>
+                            <div class="ml-4">
+                                <h5>식사 도움</h5>
+                                <span>어르신의 식사를 준비하거나, 준비된 식사를 차려드리고<br>
+                                    보조하는 서비스를 제공합니다.</span>
+                            </div>
+                            
+                        </li>
+                        <li class="mt-3 d-flex align-items-center">
+                            <div class="service-icon d-flex justify-content-center align-items-center"><i class="fas fa-user-friends"></i></div>
+                            <div class="ml-4">
+                                <h5>외출 동행</h5>
+                                <span>병원을 방문하거나 산책할 때 요양보호사님이<br>
+                                    동행해드립니다.</span>
+                            </div>
+                        </li>
+                        <li class="mt-3 d-flex align-items-center">
+                            <div class="service-icon d-flex justify-content-center align-items-center"><i class="fas fa-hand-sparkles"></i></div>
+                            <div class="ml-4">
+                                <h5>청결 유지</h5>
+                                <span>어르신이 거주하는 공간에 대한 청소를 진행하며<br>
+                                    세면 및 신체청결유지를 보조합니다.</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+        <div class="questions d-flex flex-column align-items-center my-5">
+            <div class="fixed-width">
+                <h4 class="ml-3 mb-3">자주 하는 질문</h4>
+            </div>
+            <div class="fixed-width d-flex flex-column">
+                <div class="section11-accordion">
+                    <input type="checkbox" id="b01">
+                    <label for="b01">
+                        <i class="far fa-question-circle"></i>
+                        <div class="qicon"></div>&nbsp&nbsp노인장기요양등급을 신청하려면 어떤 조건이 필요한가요?
+                        <div class="icon"><i class="fas fa-chevron-down"></i></div>
+                    </label>
+                    <div><p><strong>만 65세 이상</strong>으로 <strong>거동이 불편하신 분</strong>이라면 누구나 신청 가능합니다.  만 65세 미만이더라도 <strong>치매, 뇌혈관 질환, 파킨슨 병 등과 같은 노인성 질병</strong>으로 인해 거동이 불편하신 분들 또한 서비스를 신청할 수 있습니다. </p></div>
+                    <input type="checkbox" id="b02">
+                    <label for="b02">
+                        <i class="far fa-question-circle"></i>
+                        <div class="qicon"></div>&nbsp&nbsp노인장기요양등급은 어떤 절차를 거쳐 받게 되나요?
+                        <div class="icon"><i class="fas fa-chevron-down"></i></div>
+                    </label>
+                    <div><p>노인장기요양등급은 크게 4단계를 거칩니다. <br>
+                        <strong style="color: #F55C47;">1단계 : 등급신청서 작성 및 접수</strong> <br>
+                        건강보험공단에 직접 방문하거나 온라인 신청 및 팩스를 통해 신청 가능합니다. <br>
+                        <strong style="color: #F55C47;">2단계 : 공단 방문 심사</strong> <br>
+                        어르신의 건강 상태를 확인하기 위해 공단 직원이 어르신 댁에 직접 방문하여 실사하며, 가능하면 보호자님이 동석하실 것을 권장하고 있습니다. <br>
+                        <strong style="color: #F55C47;">3단계 : 의사소견서 제출</strong> <br>
+                        보통 육안으로 어르신의 건강 상태의 심각성이 드러나지 않는 경우, 공단에서 방문 심사 후 의사소견서를 요구하기도 합니다. 의사소견서를 발급할 수 있는 병원은 노인장기요양보험 홈페이지를 통해 확인할 수 있으며, 저희 스마일시니어 푸른재가방문요양센터에서도 찾아드리고 있습니다. <br>
+                        <strong style="color: #F55C47;">4단계 : 등급 판정</strong> <br>
+                        등급이 판정되면 일반적으로 문자를 통해 “등급 판정이 완료되었습니다.”라는 안내를 받게 됩니다. 구체적인 등급은 우편물을 통해 확인할 수 있고, 우편물 도착 전 등급을 알고 싶으신 경우 공단으로 전화 문의를 하실 수 있습니다.</p></div>
+                    <input type="checkbox" id="b03">
+                    <label for="b03">
+                        <i class="far fa-question-circle"></i>
+                        <div class="qicon"></div>&nbsp&nbsp노인장기요양등급은 몇 등급으로 나뉘어져 있나요?
+                        <div class="icon"><i class="fas fa-chevron-down"></i></div>
+                    </label>
+                    <div><p>노인장기요양등급은 1등급부터 5등급까지 나뉘어있습니다. 5등급은 <strong>치매가 있는 어르신들</strong>을 대상으로 하고, 3-4등급은 <strong>일상생활에서 부분적으로 다른사람의 도움을 필요로 하는 어르신</strong>, 1-2등급은 <strong>상당부분 혹은 전적으로 다른사람의 도움을 필요로 하는 어르신</strong>을 대상으로 합니다.</p></div>
+                    <input type="checkbox" id="b04">
+                    <label for="b04">
+                        <i class="far fa-question-circle"></i>
+                        <div class="qicon"></div>&nbsp&nbsp요양보호사는 어떤 방식을 통해 연결되나요?
+                        <div class="icon"><i class="fas fa-chevron-down"></i></div>
+                    </label>
+                    <div><p>먼저 보호자 및 어르신과의 상담을 진행한 후, 저희가 실제로 어르신 댁에 방문하여 어르신의 건강상태를 구체적으로 확인합니다. 어르신께서 <strong>원하시는 조건에 맞는 요양보호사</strong>를 구인하고 <strong>센터장 면접, 보호자 면접, 노인학대 여부 확인</strong> 후 본격적으로 서비스를 시작합니다.</p></div>
+                </div>
+            </div>
+        </div>
+        <div class="service-cost py-5 bg-white" id="service-cost">
+            <section class="mt-3">
+                <div class="d-flex justify-content-center align-items-center mb-2">
+                    <div class="bar"></div>
+                    <h2 class="mx-3">등급별 월한도액</h2>
+                    <div class="bar"></div>
+                </div>
+            </section>
+            <article>
+                <p style="text-align: center;">
+                    1-2 등급은 1일 4시간 총 24회, 3-5 등급은 1일 3시간씩 총 20회를 기준으로 하며<br>
+                    자세한 정보는 상담을 통해 확인하실 수 있습니다.
+                </p>
+            </article>
+            <section class="d-none d-md-block">
+                <div class="d-flex flex-column align-items-center py-3">
+                    <div class="d-flex">
+                        <div class="cost-grade d-flex flex-column">
+                            <h5 class="text-center my-2">1등급</h5>
+                            <div class="p-3 bg-white cost-box">
+                                <strong style="color: #F55C47;">개인 부담금</strong> <br>
+                                월 228,616원<br><br>
+                                <strong style="color: #F55C47;">국가 지원금</strong> <br>
+                                월 1,292,084원
+                            </div>
+                        </div>
+                        <div class="cost-grade d-flex flex-column mx-5">
+                            <h5 class="text-center my-2">2등급</h5>
+                            <div class="p-3 bg-white cost-box">
+                                <strong style="color: #F55C47;">개인 부담금</strong> <br>
+                                월 202,752원<br><br>
+                                <strong style="color: #F55C47;">국가 지원금</strong> <br>
+                                월 1,148,948원
+                            </div>
+                        </div>
+                        <div class="cost-grade d-flex flex-column">
+                            <h5 class="text-center my-2">3등급</h5>
+                            <div class="p-3 bg-white cost-box">
+                                <strong style="color: #F55C47;">개인 부담금</strong> <br>
+                                월 187,863원<br><br>
+                                <strong style="color: #F55C47;">국가 지원금</strong> <br>
+                                월 1,107,537원
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex mt-5">
+                        <div class="cost-grade d-flex flex-column">
+                            <h5 class="text-center my-2">4등급</h5>
+                            <div class="p-3 bg-white cost-box">
+                                <strong style="color: #F55C47;">개인 부담금</strong> <br>
+                                월 173,412원<br><br>
+                                <strong style="color: #F55C47;">국가 지원금</strong> <br>
+                                월 1,016,388원
+                            </div>
+                        </div>
+                        <div class="cost-grade d-flex flex-column mx-5">
+                            <h5 class="text-center my-2">5등급</h5>
+                            <div class="p-3 bg-white cost-box">
+                                <strong style="color: #F55C47;">개인 부담금</strong> <br>
+                                월 144,500원<br><br>
+                                <strong style="color: #F55C47;">국가 지원금</strong> <br>
+                                월 876,800원
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="d-block d-md-none">
+                <div class="d-flex flex-column align-items-center">
+                    <div class="d-flex justify-content-center mb-3">
+                        <div class="cost-grade d-flex flex-column mr-2">
+                            <h5 class="text-center my-2">1등급</h5>
+                            <div class="p-3 bg-white cost-box">
+                                <strong style="color: #F55C47;">개인 부담금</strong> <br>
+                                월 228,616원<br><br>
+                                <strong style="color: #F55C47;">국가 지원금</strong> <br>
+                                월 1,292,084원
+                            </div>
+                        </div>
+                        <div class="cost-grade d-flex flex-column ml-2">
+                            <h5 class="text-center my-2">2등급</h5>
+                            <div class="p-3 bg-white cost-box">
+                                <strong style="color: #F55C47;">개인 부담금</strong> <br>
+                                월 202,752원<br><br>
+                                <strong style="color: #F55C47;">국가 지원금</strong> <br>
+                                월 1,148,948원
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-center mb-3">
+                        <div class="cost-grade d-flex flex-column mr-2">
+                            <h5 class="text-center my-2">3등급</h5>
+                            <div class="p-3 bg-white cost-box">
+                                <strong style="color: #F55C47;">개인 부담금</strong> <br>
+                                월 187,863원<br><br>
+                                <strong style="color: #F55C47;">국가 지원금</strong> <br>
+                                월 1,107,537원
+                            </div>
+                        </div>
+                        <div class="cost-grade d-flex flex-column ml-2">
+                            <h5 class="text-center my-2">4등급</h5>
+                            <div class="p-3 bg-white cost-box">
+                                <strong style="color: #F55C47;">개인 부담금</strong> <br>
+                                월 173,412원<br><br>
+                                <strong style="color: #F55C47;">국가 지원금</strong> <br>
+                                월 1,016,388원
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cost-grade d-flex flex-column mx-5">
+                        <h5 class="text-center my-2">5등급</h5>
+                        <div class="p-3 bg-white cost-box">
+                            <strong style="color: #F55C47;">개인 부담금</strong> <br>
+                            월 144,500원<br><br>
+                            <strong style="color: #F55C47;">국가 지원금</strong> <br>
+                            월 876,800원
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div id="counseling" class="counseling py-5">
+            <section class="mt-3">
+                <div class="d-flex justify-content-center align-items-center mb-2">
+                    <div class="bar"></div>
+                    <h2 class="mx-3">상담 신청</h2>
+                    <div class="bar"></div>
+                </div>
+            </section>
+            <article>
+                <p style="text-align: center;">
+                    이름과 연락처, 어르신 정보를 남겨주시면 신청 당일 전화 상담을 도와드립니다.
+                </p>
+            </article>
+            <div class="d-flex flex-column align-items-center">
+                <form id="counsel-form" method="POST" class="row fixed-width">
+                    {% csrf_token %}
+                    <div class="p-2 col-lg-4 col-xl-4"><input name="name" class="form-control" placeholder="이름" required /></div>
+                    <div class="p-2 col-lg-4 col-xl-4"><input name="phonenumber" class="form-control" placeholder="연락처" required /></div>
+                    <div class="p-2 col-lg-4 col-xl-4"><input name="relation" class="form-control" placeholder="어르신과의 관계" required /></div>
+                    <textarea name="message" class="m-2 form-control" placeholder="어르신 나이/어르신 성별/거주 지역/등급 유무/어르신 상태/특이사항" style="height: 250px;" required></textarea>
+                </form>
+                <input class="mt-2 input-button" form="counsel-form" type="submit" value="상담 신청">
+            </div>
+        </div>
+        <div id="center-location" class="center-location py-5">
+            <section class="mt-3">
+                <div class="d-flex justify-content-center align-items-center mb-2">
+                    <div class="bar"></div>
+                    <h2 class="mx-3">센터 소개</h2>
+                    <div class="bar"></div>
+                </div>
+            </section>
+            <div class="d-flex justify-content-center">
+                <section class="row fixed-width mt-3">
+                    <div class="col-lg-6 d-flex justify-content-center align-items-center mb-4">
+                        <div class="info-list">
+                            <p>
+                                <strong style="color: #F55C47;">연락처</strong> <br>
+                                031-241-3852 <br><br>
+                                <strong style="color: #F55C47;">주소</strong> <br>
+                                경기도 수원시 장안구 송원로 10(송죽프라자), 2층 232호<br><br>
+                                <strong style="color: #F55C47;">이메일</strong> <br>
+                                smilesenior87@naver.com
+                            </p>
+                        </div>
+                    </div>
+                    <div class="d-none d-lg-block col-lg-6">
+                        <div class="d-flex justify-content-center">
+                            <div class="mapouter"><div class="gmap_canvas"><iframe width="500" height="350" id="gmap_canvas" src="https://maps.google.com/maps?q=%EC%86%A1%EC%9B%90%EB%A1%9C%2010&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://123movies-to.org"></a><br><style>.mapouter{position:relative;text-align:right;height:350px;width:500px;}</style><a href="https://www.embedgooglemap.net">insert google map</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:350px;width:500px;}</style></div></div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+    </main>
+    <footer>
+        <div class="py-4 text-center">
+            &copy;copyright <strong>PUREUN SmileSenior</strong>. All Rights Reserved <br>
+            Designed by Minji Kwak <br>
+            <a href='https://kr.freepik.com/vectors/people'>People 벡터는 freepik - kr.freepik.com가 제작함</a>
+        </div>
+    </footer>
+    <nav class="bottom-nav">
+        <a class="bottomnav-link" href="#service-info">
+            <span>
+                방문 <br>
+                요양
+            </span>
+        </a>
+        <a class="bottomnav-link text-center" href="#service-cost">
+            <span>
+                등급별 <br>
+                월한도액
+            </span>
+        </a>
+        <a class="bottomnav-link" href="">
+            <span>
+                홈
+            </span>
+        </a>
+        <a class="bottomnav-link" href="#counseling">
+            <span>
+                상담 <br>
+                신청
+            </span>
+        </a>
+        <a class="bottomnav-link" href="#center-location">
+            <span>
+                센터 <br>
+                정보
+            </span>
+        </a>
+    </nav>
+
+    <script src="{% static 'js/bootstrap.bundle.js' %}"></script>
+    <script src="{% static 'js/bootstrap.bundle.js.map' %}"></script>
+    <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.bundle.min.js.map' %}"></script>
+    <script src="{% static 'js/bootstrap.js' %}"></script>
+    <script src="{% static 'js/bootstrap.js.map' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js.map' %}"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    {% if modal %}
+    <script>
+        alert("상담 신청이 완료되었습니다. \n 감사합니다.")
+    </script>
+    {% endif %}
+</html>
